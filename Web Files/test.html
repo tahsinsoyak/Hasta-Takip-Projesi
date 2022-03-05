@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <div id="graph"></div>
+    <script>
+        function rand() {
+            return Math.random();
+        }
+
+        Plotly.plot('graph', [{
+            y: [1, 2, 3].map(rand),
+            mode: 'lines',
+            line: {
+                color: '#80CAF6'
+            }
+        }]);
+
+        var cnt = 0;
+
+        var interval = setInterval(function () {
+
+            Plotly.extendTraces('graph', {
+                y: [
+                    [rand()]
+                ]
+            }, [0])
+
+            if (cnt === 100) clearInterval(interval);
+        }, 300);
+    </script>
+</body>
+
+</html>

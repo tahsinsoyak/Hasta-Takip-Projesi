@@ -1,0 +1,39 @@
+<section>
+	<header>
+		<h3>Doctor Section</h3>
+	</header>
+</section>
+
+<section>
+	<header>
+		<h3>Nurse Section</h3>
+	</header>
+</section>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    position: relative;
+    padding: 100px;
+}
+
+section header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section header h3{
+    font-size: 5em;
+}

@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+:root {
+  --animate-duration: 600ms;
+  --animate-delay: 0.5s;
+}
+
+.container{
+  padding: 30px;
+}
+.main-graph{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.controls{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  margin-top: 36px;
+}
+
+.button-submit{
+  background-color: #be3030;
+  margin: 10px;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-submit:hover{
+  background-color: #8b1414;
+}
+
+.fever-controls{
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.room-temperature{
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.pulse-controls{
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.fever-color{
+background-color: rgb(255, 99, 132);
+}
+
+.room-color{
+background-color: rgb(16, 58, 202);
+}
+
+.pulse-color{
+background-color: rgb(36, 161, 156);
+}
+
+.submit-type:hover{
+  background-color: darkslategrey;
+}
+.slider {
+  width: 100%;
+  margin-top: 15px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 90%;
+  height: 15px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+input[type="range"]:hover {
+  background-color: #fffafa;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 28px;
+  height: 28px;
+  background-color: #140088;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #640f0f;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  box-shadow: 0px 0px 1px #0026ff;
+}
+
+#rangevalue {
+  text-align: center;
+  font-family: "Quantico", sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  padding: 10px 0px;
+  width: 100%;
+  color: #110049;
+}
+
+.box{
+  background-color: #3c6d59;
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+}
