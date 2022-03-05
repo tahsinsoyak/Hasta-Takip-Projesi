@@ -1,4 +1,4 @@
-# Hasta-Takip-C--PHP-XBEE
+# Hasta Takip Uygulaması [C#,C,PHP,HTML,XBEE]
 Xbee  ve Arduino kullanarak kablosuz iletişim ile hasta takip uygulaması. Web Arayüzüne C# ile bağlanıp veri aktarımı ve kaydı yapıyoruz.
 
 Xbee teknolojisini kullanarak sensörler aracılığı ile bağlantı kuruyoruz.
