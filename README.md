@@ -10,4 +10,3 @@ Sensörler;
 
 
 C# aracılığı ile verileri alıyoruz ve local veri tabanına yolluyoruz.
-![image](https://user-images.githubusercontent.com/54424377/156894030-d8646433-9103-44ff-be57-ec9222589e36.png)
